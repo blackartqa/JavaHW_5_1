@@ -31,6 +31,7 @@ class BonusServiceTest {
         long actual = service.calculate(amount, registered);
         assertEquals(expected, actual);
     }
+
     //незарегистрированный пользователь, бонус ниже лимита
     @org.junit.jupiter.api.Test
     void shouldCalculateForNotRegisteredAndUnderLimit() {
